@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supermercado Espungabera</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Supermercado Espungabera</h1>
+
+<div class="menu-icon" onclick="abrirMenu()">☰</div>
+
+<nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="contato.html">Contato</a>
+</nav>
+</header>
+
+<main>
+
+<section class="fade-in">
+<h2>Bem-vindo ao nosso supermercado</h2>
+<p>Qualidade, variedade e melhores preços da região.</p>
+</section>
+
+<section class="fade-in">
+<h2>Produtos em destaque</h2>
+
+<div class="card">
+<img src="https://images.pexels.com/photos/4110256/pexels-photo-4110256.jpeg">
+<p>🍚 Arroz</p>
+<p>Preço: 50 MZN</p>
+</div>
+
+<div class="card">
+<img src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg">
+<p>🥤 Refrigerante</p>
+<p>Preço: 30 MZN</p>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>Feito por [Teu Nome]</p>
+</footer>
+
+<a href="https://wa.me/258872910463" class="whatsapp">💬</a>
+
+<script>
+function abrirMenu() {
+    document.getElementById("menu").classList.toggle("ativo");
+}
+</script>
+
+</body>
+</html>
