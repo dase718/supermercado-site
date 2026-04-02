@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Produtos</h1>
+
+<div class="menu-icon" onclick="abrirMenu()">☰</div>
+
+<nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="contato.html">Contato</a>
+</nav>
+</header>
+
+<main>
+
+<h2>Pesquisar Produto</h2>
+
+<input type="text" id="pesquisa" placeholder="Pesquisar..." onkeyup="buscar()">
+
+<div id="lista">
+
+<div class="card">
+<img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg">
+<p>🍎 Fruta</p>
+<p>Preço: 20 MZN</p>
+</div>
+
+<div class="card">
+<img src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg">
+<p>🥤 Refrigerante</p>
+<p>Preço: 30 MZN</p>
+</div>
+
+<div class="card">
+<img src="https://images.pexels.com/photos/4110256/pexels-photo-4110256.jpeg">
+<p>🍚 Arroz</p>
+<p>Preço: 50 MZN</p>
+</div>
+
+</div>
+
+</main>
+
+<a href="https://wa.me/258872910463" class="whatsapp">💬</a>
+
+<script>
+function abrirMenu() {
+    document.getElementById("menu").classList.toggle("ativo");
+}
+
+function buscar() {
+    let input = document.getElementById("pesquisa").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        if (card.innerText.toLowerCase().includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
